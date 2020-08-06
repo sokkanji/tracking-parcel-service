@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="MinjiSo">
+    <meta name="generator" content="vscode">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+    <div id="index">
+    <h2><%= title %></h2>
+        <p>택배사</p>
+        <div class="custom-control custom-radio">
+            <ul>
+                <li><input type="radio" name="t_code" id="op1" value="04" checked class="custom-control-input">
+                    <label for="op1" class="custom-control-label">CJ대한통운</label>
+                </li>
+                <li><input type="radio" name="t_code" id="op2" value="05" class="custom-control-input">
+                    <label for="op2" class="custom-control-label">한진택배</label>
+                </li>
+                <li><input type="radio" name="t_code" id="op3" value="23" class="custom-control-input">
+                    <label for="op3" class="custom-control-label">경동택배</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-group">
+            <label for="t_invoice">운송장 번호</label>
+            <input type="text" class="form-control" name="t_invoice" id="t_invoice" placeholder="운송장 번호">
+            <button type="submit" id="lookup-btn" class="btn btn-primary">조회하기</button>
+        </div>
+
+        <div class="result-div">
+            <p>조회결과</p>
+            <table id="t1" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>운송장</th>
+                        <th>받는 사람</th>
+                        <th>받는 사람 주소</th>
+                        <th>상품명</th>
+                        <th>배송 상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="result-tr1"></tr>
+                </tbody>
+            </table>
+
+            <p>상품상태 확인</p>
+            <table id="t2" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>처리시간</th>
+                        <th>위치</th>
+                        <th>단계</th>
+                        <th>담당 전화번호</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script> common(); </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+#index{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#index h2{
+    margin: 20px 0 50px 0;
+}
+.custom-control{
+    padding: 0;
+}
+ul{
+    overflow: hidden;
+}
+li{
+    float: left;
+    margin-right: 50px;
+}
+.btn-wrap{
+    text-align: center;
+}
+.result-div{
+    margin-top: 50px;
+}
+table{
+    text-align: center;
+}
+#t1 th:nth-child(3){
+    width: 300px;
+}
+#t1 th:nth-child(6){
+    width: 130px;
+}
+.form-group>label{
+    display: block;
+    overflow: hidden;
+}
+#t_invoice{
+    float: left;
+    width: 700px;
+}
+#lookup-btn{
+    margin-left: 10px;
+}
