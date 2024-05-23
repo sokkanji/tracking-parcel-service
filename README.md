@@ -1,8 +1,8 @@
-# tracking-service
+# tracking-parcel-service
 통합 택배 배송 조회 서비스 웹  
 
 ## State
-* API 이용권 만료로 현재는 송장번호 조회가 불가능합니다. 
+* 현재 API 이용권 만료로 송장번호 조회 불가능합니다. 
 
 ## Development setup
 
